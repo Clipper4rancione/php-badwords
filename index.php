@@ -15,26 +15,25 @@
     <div class="wrapper d-flex justify-content-center align-items-center">
         <div class="mc-container">
              <h1 class="text-center py-3">PHP Badwords</h1>
-             <div class="container py-5">
-                <div class="row py-3">
-                    <div class="col-auto">
-                        <label for="input" class="text-center">Scrivi una frase</label>
-                        <input type="text" class="form-control" placeholder="Inserisci del testo..">
+            <div class="container py-5">
+                <form action="./page.php">
+                    <div class="row py-3">
+                            <div class="col-auto">
+                                <label for="input" class="text-center">Scrivi una frase</label>
+                                <input type="text" class="form-control" name="frase" placeholder="Inserisci del testo..">
+                            </div>
+                            <div class="col-auto">
+                                <label for="input" class="text-center">Parola da censurare</label>
+                                <input type="text" class="form-control" name="badword" placeholder="Inserisci la badword">
+                            </div>
                     </div>
-                    <div class="col-auto">
-                        <label for="input" class="text-center">Parola da censurare</label>
-                        <input type="text" class="form-control" placeholder="Inserisci la badword">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-auto">
-                        <div class="btn btn-success" type="submit" >Invia</div>
-                    </div>
-                    <div class="col-auto">
-                        <div class="btn btn-danger">Clear</div>
-                    </div>
-                </div>
-             </div>
+                        <div class="row">
+                            <div class="col-auto">
+                                <button class="btn btn-success" type="submit">Invia</button>
+                            </div>
+                        </div>
+                </form>
+            </div>
         </div>
     </div>
 
